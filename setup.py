@@ -18,12 +18,12 @@ install_requires = [x.strip() for x in all_reqs if 'git+' not in x]
 dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' not in x]
 
 setup(
-    name='joopal-cam',
+    name='joopal_cam',
     version=VERSION,
     description='A selfie neural network classifier. Made at Los Altos Hacks by @zfogg and @kern.',
     long_description=long_description,
-    url='https://github.com/zfogg/joopal-cam',
-    download_url='https://github.com/zfogg/joopal-cam/tarball/' + VERSION,
+    url='https://github.com/zfogg/joopal_cam',
+    download_url='https://github.com/zfogg/joopal_cam/tarball/' + VERSION,
     license='BSD',
     classifiers=[
       'Development Status :: 3 - Alpha',

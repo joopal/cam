@@ -1,4 +1,4 @@
-joopal-cam
+joopal_cam
 ===============================
 
 version number: 0.0.1
@@ -14,12 +14,12 @@ Installation / Usage
 
 To install use pip:
 
-    $ pip install joopal-cam
+    $ pip install joopal_cam
 
 
 Or clone the repo:
 
-    $ git clone https://github.com/zfogg/joopal-cam.git
+    $ git clone https://github.com/zfogg/joopal_cam.git
     $ python setup.py install
     
 Contributing
