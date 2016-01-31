@@ -1,7 +1,10 @@
 from os.path import join, dirname
-from dotenv import load_dotenv
+import dotenv
 
 
 dotenv_path = join(dirname(__file__), '../.env')
-load_dotenv(dotenv_path)
+dotenv.load_dotenv(dotenv_path)
+
+def write_config(key, val):
+    return dotenv.set_key(dotenv_path, key, val)
 

@@ -2,6 +2,7 @@ from os import environ
 from flask import Flask, request
 from instagram.client import InstagramAPI
 from insta import insta_api
+from twit import twitter_api
 
 
 http_server = Flask("joopal_cam")
@@ -19,13 +20,6 @@ def oauth():
 
 @http_server.route("/search")
 def search():
-    tag_search = ["selfie"]
-    for tag in tag_search:
-        print("tag name: %s" % tag)
-        selfies, _next = insta_api.tag_recent_media(tag_name=tag)
-        for selfie in selfies:
-            print("selfie: %s" % selfie)
-    #return "<br />".join([str(s.media_count) for s in selfies])
     return "search"
 
 @http_server.route("/user/<username>")
